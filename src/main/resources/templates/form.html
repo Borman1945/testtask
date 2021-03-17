@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Boot Form Submission</title>
+
+</head>
+<body>
+<h1>Spring Boot Form Submission</h1>
+
+<form action="/form" method="post">
+    <div>String:</div>
+    <input type="text" name="inputStr"/>
+    <br/><br/>
+    <input type="submit" value="Submit"/>
+    <input type="reset" value="Reset"/>
+
+    <p th:text="'Was, ' + ${was} + '!'" />
+    <p th:text="'ReverseVowels, ' + ${reverse} + '!'" />
+</form>
+
+</body>
+</html>
